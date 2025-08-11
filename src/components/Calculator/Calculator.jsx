@@ -4,6 +4,12 @@ function Calculator() {
   const [input, setInput] = useState("0");
   const [result, setResult] = useState(0);
 
+  
+  const resetCalculator = () => {
+    setInput("0");
+    setResult(0);
+  };
+
   const onClickHandler = (e) => {
     const clickedValue = e.target.value;
 
@@ -35,13 +41,7 @@ function Calculator() {
     } else {
       setInput(input + clickedValue);
     }
-
-    if (clickedValue === "Reset") {
-      setInput("0");
-      setResult("0");
-
-      return;
-    }
+    
   };
 
   return (
@@ -52,9 +52,7 @@ function Calculator() {
         <button onClick={onClickHandler} value={0}>
           0
         </button>
-        <button onClick={onClickHandler} value={"Reset"}>
-          Reset
-        </button>
+        <button onClick={resetCalculator}>Reset</button>
       </div>
       <div>
         <button onClick={onClickHandler} value={1}>
