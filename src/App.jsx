@@ -11,11 +11,14 @@ import Calculator from "./components/Calculator/Calculator";
 import DomRef from "./components/DomRef/DomRef";
 import Effect1 from "./components/Effect1/Effect1";
 import Effect2 from "./components/Effect1/Effect2/Effect2";
+import Emtion1 from "./components/Emtion/Emotion1/Emotion1";
+import Emotion2 from "./components/Emtion/Emotion2/Emotion2";
 import LifeCycle from "./components/LifeCycle/LifeCycle";
 import LifeCycleApp from "./components/LifeCycle/LifeCycleApp";
 import Render from "./components/LifeCycle/Render";
 import FruitsFilter from "./components/Practice/FruitsFilter/FruitsFilter";
 import FruitsFilter1 from "./components/Practice/FruitsFilter/FruitsFilter1";
+import SignupForm from "./components/Practice/SignupForm/SignupForm";
 import UserProfile from "./components/Practice/UserProfile/UserProfile";
 
 function App() {
@@ -38,7 +41,11 @@ function App() {
       {/* <Effect2/> */}
       {/* <FruitsFilter/> */}
       {/* <FruitsFilter1/> */}
-      <UserProfile/>
+      {/* <UserProfile/> */}
+      <SignupForm/>
+      {/* <Emtion1/> */}
+      {/* <Emotion2/> */}
+
     </>
   );
 }
