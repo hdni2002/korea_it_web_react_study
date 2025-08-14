@@ -4,6 +4,7 @@ export const container = css`
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  overflow-y: hidden;
 `;
 export const listContainer = css`
   flex-grow: 1;
@@ -76,9 +77,13 @@ export const hiddenTrashBox = css`
   height: 46px;
   overflow: hidden;
   cursor: pointer;
+  &:hover > div {
+    right: 0;
+  }
 `;
 
 export const trashbox = css`
+  transition: 0.3s ease-in-out;
   position: absolute;
   top: 0;
   right: -46px;
@@ -90,5 +95,5 @@ export const trashbox = css`
   background-color: #ea0808;
   color: #fff;
   cursor: pointer;
-
+  font-size: 20px;
 `;
