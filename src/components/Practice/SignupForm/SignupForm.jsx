@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-/** @jsxImportSource @emotion/react */
-import * as s from "./style";
 function SignupForm() {
   const [formValues, setFormValues] = useState({
     email: "",
